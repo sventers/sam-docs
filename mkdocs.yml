@@ -1,0 +1,8 @@
+site_name: sam-docs
+site_url: https://sventers.github.io/sam-docs
+# site_author: Sam Venters
+# site_description:
+theme:
+  name: readthedocs # or mkdocs
+  # hljs_languages:
+    # - yaml
