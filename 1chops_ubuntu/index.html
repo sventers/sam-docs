@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://sventers.github.io/sam-docs/1chops_ubuntu/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Ubuntu Chops - sam-docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Ubuntu Chops";
+        var mkdocs_page_input_path = "1chops_ubuntu.md";
+        var mkdocs_page_url = "/sam-docs/1chops_ubuntu/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> sam-docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../0chops_bash/">Bash Chops</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../0chops_pandas_numpy/">Numpy/Pandas Chops</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../0chops_python3_pip/">Python 3 Chops</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Ubuntu Chops</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#-screenshots">-&gt; Screenshots</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-file-conversion">-&gt; File conversion</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-root-directories">-&gt; Root Directories</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-networking">-&gt; Networking</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-permissions">-&gt; Permissions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-packages">-&gt; Packages</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-memory-disk-space-partition-hibernation-ram-swap">-&gt; Memory, Disk Space, Partition, Hibernation, RAM, Swap</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-outline">-&gt; Outline</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-hibernation-issues">-&gt; Hibernation Issues</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#-standard-output-filesystem-navigationedit">-&gt; Standard Output, Filesystem Navigation/Edit</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#-config-files">-&gt; Config files</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-environment">-&gt; Environment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-command-line-tools">-&gt; Command Line Tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-index">-&gt; Index</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../2chops_git/">Git Chops</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../2chops_markdown/">Markdown Chops</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../2chops_vscode/">VSCode Chops</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">sam-docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Ubuntu Chops</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ubuntu-chops">Ubuntu Chops</h1>
+<ul>
+<li><a href="#index">index</a></li>
+</ul>
+<hr />
+<h3 id="-screenshots">-&gt; Screenshots</h3>
+<ul>
+<li>PrtSc – Save a screenshot of the entire screen to the “Pictures” directory.</li>
+<li>Shift + PrtSc – Save a screenshot of a specific region to Pictures.</li>
+<li>Alt + PrtSc  – Save a screenshot of the current window to Pictures.</li>
+<li>Ctrl + PrtSc – Copy the screenshot of the entire screen to the clipboard.</li>
+<li>Shift + Ctrl + PrtSc – Copy the screenshot of a specific region to the clipboard.</li>
+<li>Ctrl + Alt + PrtSc – Copy the screenshot of the current window to the clipboard.</li>
+</ul>
+<h3 id="-file-conversion">-&gt; File conversion</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># convert xlsx to csv</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">for</span> i   <span class="k">in</span> *.xlsx<span class="p">;</span> <span class="k">do</span>  libreoffice --headless --convert-to csv <span class="s2">&quot;</span><span class="nv">$i</span><span class="s2">&quot;</span> <span class="p">;</span> <span class="k">done</span>
+</code></pre></div>
+<h3 id="-root-directories">-&gt; Root Directories</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/etc/systemd/*   <span class="c1"># https://systemd.io/  boot, service mgmt,  </span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>stat <span class="c1"># inode</span>
+</code></pre></div>
+<h3 id="-networking">-&gt; Networking</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>netstat -tunlp
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ss -tunlp
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>nmcli
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>wget
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>curl
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>ping
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>ifconfig
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">### difficulties? connecting to unsecured wifi networks with login pages (ie airport, coffeeshop)</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>sudo service network-manager restart
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>ip route
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>systemd-resolve --status
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>iwconfig <span class="c1"># check wifi speed</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>/etc/resolv.conf <span class="c1"># check the dns of a page if your phone connects to and then add it to you  file ahead of 8.8.8.8 or your normal dns</span>
+</code></pre></div>
+<hr />
+<h3 id="-permissions">-&gt; Permissions</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>chown  <span class="c1"># octal {rwx rwx rwx} represents permissions for  { owner group other } </span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1">#### credit https://linuxize.com/post/chmod-command-in-linux/</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>-rw-r--r-- <span class="m">12</span> linuxize users <span class="m">12</span>.0K Apr  <span class="m">8</span> <span class="m">20</span>:51 filename.txt
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">|</span><span class="o">[</span>-<span class="o">][</span>-<span class="o">][</span>-<span class="o">]</span>-   <span class="o">[</span>------<span class="o">]</span> <span class="o">[</span>---<span class="o">]</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">|</span> <span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span> <span class="p">|</span>      <span class="p">|</span>       <span class="p">|</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">|</span> <span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span> <span class="p">|</span>      <span class="p">|</span>       +-----------&gt; <span class="m">7</span>. Group
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">|</span> <span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span> <span class="p">|</span>      +-------------------&gt; <span class="m">6</span>. Owner
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">|</span> <span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span> +--------------------------&gt; <span class="m">5</span>. Alternate Access Method
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">|</span> <span class="p">|</span>  <span class="p">|</span>  +----------------------------&gt; <span class="m">4</span>. Others Permissions
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">|</span> <span class="p">|</span>  +-------------------------------&gt; <span class="m">3</span>. Group Permissions
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">|</span> +----------------------------------&gt; <span class="m">2</span>. Owner Permissions
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>+------------------------------------&gt; <span class="m">1</span>. File Type
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="c1">####</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>chmod
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>chgrp
+</code></pre></div>
+<h3 id="-packages">-&gt; Packages</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">type</span> PACKAGE   <span class="c1">#shows install path</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>apt-cache policy PACKAGE
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>apt-get    <span class="c1">#</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>ppa-purge
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>aptitude
+</code></pre></div>
+<h3 id="-memory-disk-space-partition-hibernation-ram-swap">-&gt; Memory, Disk Space, Partition, Hibernation, RAM, Swap</h3>
+<p>Gparted is a gui for partitions, but you need a bootable usb to edit the partition that the OS is on</p>
+<p>https://tldp.org/HOWTO/Partition/index.html</p>
+<h3 id="-outline">-&gt; Outline</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>fdisk
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>df
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>ds
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>ps
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>conky
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>sudo blkid
+</code></pre></div>
+<h3 id="-hibernation-issues">-&gt; Hibernation Issues</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>systemctl hibernate
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">cd</span> /sys/power
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>man busctl
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>swapon --show
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>sudo swapon /dev/sda2  <span class="c1"># example of adding partition</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>sudo nano/etc/fstab
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>swapoff
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>cat /proc/swaps
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>cat /etc/initramfs-tools/conf.d/resume
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>cat /etc/fstab
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>lsblk
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>sudo blkid
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="c1">#other</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>dd <span class="c1"># Copy a file, converting and formatting according to the operands.</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>fdisk -l <span class="c1"># Display or manipulate a disk partition table.</span>
+</code></pre></div>
+<h2 id="-standard-output-filesystem-navigationedit">-&gt; Standard Output, Filesystem Navigation/Edit</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>cat
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>head
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>tail
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">echo</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>tree
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>move mv
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>copy cp
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>touch
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>remove rm
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>mkdir <span class="c1"># make directory </span>
+</code></pre></div>
+<h3 id="-config-files">-&gt; Config files</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>.bashrc
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>.bashprofile
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>.zsh
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>.profile
+</code></pre></div>
+<h3 id="-environment">-&gt; Environment</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>env
+</code></pre></div>
+<h3 id="-command-line-tools">-&gt; Command Line Tools</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>ranger --- explorer / finder <span class="k">in</span> 
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>ncdu --- shows size of all files sorted navigate with arrow keys
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>jq --- cli <span class="k">for</span> editing json
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>inxi -Fxz  ---- show system profile, cpu, battery, hardware descriptions
+</code></pre></div>
+<h3 id="-index">-&gt; Index</h3>
+<ul>
+<li><a href="#cliTOOLS">useful cli utilies</a></li>
+<li><a href="#network">network | wifi</a></li>
+<li><a href="#packages">packages | apt-get | ppa</a></li>
+<li><a href="#sound">sound</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../0chops_python3_pip/" class="btn btn-neutral float-left" title="Python 3 Chops"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2chops_git/" class="btn btn-neutral float-right" title="Git Chops">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../0chops_python3_pip/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2chops_git/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
