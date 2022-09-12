@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://sventers.github.io/sam-docs/bash/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Bash - sam-docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Bash";
+        var mkdocs_page_input_path = "bash.md";
+        var mkdocs_page_url = "/sam-docs/bash/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> sam-docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Bash</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#grep-find-sed-awk">grep find sed awk</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#io-operators">i/o &amp; operators</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#networking">networking</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#regex">regex</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#navigation">navigation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#loops">loops</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scripts">scripts</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bashrc">.bashrc</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker/">Docker</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gcloud/">Gcloud</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../git/">Git</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../markdown/">Markdown</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python3/">Python3</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../ubuntu/">Ubuntu</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vscode/">VSCode</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">sam-docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Bash</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="bash">Bash</h1>
+<ul>
+<li><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh">https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh</a></li>
+<li><a href="https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html">https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html</a></li>
+</ul>
+<h3 id="grep-find-sed-awk">grep find sed awk</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># look through current directory&#39;s hieracrhy for text in file</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>grep -rnw <span class="s1">&#39;/path/to/somewhere/&#39;</span> -e <span class="s1">&#39;pattern&#39;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># recursively delete all files of a single extension</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>find . -name <span class="s2">&quot;*.bak&quot;</span> -type f -delete    
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># recursive print all file with extension .py</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>find <span class="nv">$directory</span> -type f -name <span class="s2">&quot;*.in&quot;</span>    
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>find ./ -name <span class="s1">&#39;*article*&#39;</span> <span class="p">|</span> xargs -I <span class="s1">&#39;{}&#39;</span> mv <span class="o">{}</span> ../backup
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>find ./ -name <span class="s1">&#39;*article*&#39;</span> <span class="p">|</span> xargs mv -t ../backup
+</code></pre></div>
+<h3 id="io-operators">i/o &amp; operators</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>wc <span class="c1"># wordcount</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>cat 
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>less
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sort -n
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>head -n <span class="o">{</span>how many<span class="o">}</span> <span class="o">{</span>file<span class="o">}</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>tail -n <span class="o">{</span>num<span class="o">}</span> <span class="o">{</span>file<span class="o">}</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>file name <span class="o">{</span>*<span class="o">[</span>ab<span class="o">]</span>.*<span class="o">}</span>   ——&gt; prints files with a or b <span class="k">in</span> that position
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>uniq <span class="o">{</span>file<span class="o">}</span>   —&gt; removes adjacent duplicated lines
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>cut   —&gt;  removes portions of lines from a file
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>w   —&gt; prints current user and what they are doing
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># wc all text files in current  directory</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>wc *.txt
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>A<span class="p">;</span> B    <span class="c1"># Run A and then B, regardless of success of A</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>A <span class="o">&amp;&amp;</span> B  <span class="c1"># Run B if and only if A succeeded</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>A <span class="o">||</span> B  <span class="c1"># Run B if and only if A failed</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>A <span class="p">&amp;</span>     <span class="c1"># Run A in background.</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>*  <span class="c1"># wildcard for array of chars</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>?  <span class="c1"># wildcard for single char</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>&gt;  <span class="c1"># redirect shell output to file appends</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>&gt;&gt; <span class="c1"># redirect shell output to file overwrites</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>!  <span class="c1"># boolean NOT </span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="o">&amp;&amp;</span> <span class="c1"># boolean AND </span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="o">||</span> <span class="c1"># boolean OR</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>** <span class="c1"># exponentiation</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>%  <span class="c1"># modulo</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="p">;</span>  <span class="c1"># separate lines in terminal prompt</span>
+</code></pre></div>
+<h3 id="networking">networking</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># show list of all http port connections active, use sudo with lsof to include system connections</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>netstat -ap tcp <span class="o">||</span> grep -i “listen”
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>lsof -PiTCP -sTCP:LISTEN
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># make an http request and trace out what happens on the way</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>curl 
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    -verbose 
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    -trace-ascii debugdumplog.txt   
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    -o redirect output
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="nv">URL</span> <span class="o">=</span> 
+</code></pre></div>
+<h3 id="regex">regex</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[a-z]_
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>[0-9]_
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>^
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>.\*
+</code></pre></div>
+<h3 id="navigation">navigation</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>which <span class="o">{</span>package<span class="o">}</span> <span class="c1"># show address of version in use</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">exec</span> bash   <span class="c1"># restart shell</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>printenv    <span class="c1"># show all env variables</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>!histnum    <span class="c1">#run command from history</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>chsh -s     <span class="c1"># change shell zsh bash etc</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nb">type</span> -a <span class="o">[</span>command<span class="o">]</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>df  <span class="c1"># show disk files on machine</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>whoami  <span class="c1"># display user name</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>chmod   
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>mkdir <span class="o">{</span>name<span class="o">}</span>    <span class="c1"># makes a directory with a name</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>mv  <span class="c1"># move files to new directory</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="nb">pwd</span>     <span class="c1"># what is present working directory</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>stat --help <span class="c1"># lots of good stuff</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>ps -Eafx::  <span class="c1"># shows information about the current processes running in shell</span>
+</code></pre></div>
+<h3 id="loops">loops</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># starts by expanding *.filetype</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">for</span> <span class="o">{</span>x<span class="o">}</span> <span class="k">in</span> <span class="o">{</span>*.filetype<span class="o">}</span><span class="p">;</span>  <span class="k">do</span> blah<span class="p">;</span>  <span class="k">done</span> <span class="p">;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># prints to output</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">echo</span> <span class="o">{</span>text <span class="k">for</span> anything to output<span class="o">}</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>!!   ———&gt; last run <span class="nb">command</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>!$  ————&gt; run last word of previous <span class="nb">command</span>
+</code></pre></div>
+<h3 id="scripts">scripts</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>bash <span class="o">{</span>script.sh<span class="o">}</span> <span class="o">{</span><span class="nv">$inputvar1</span><span class="o">}</span>
+</code></pre></div>
+<h3 id="bashrc">.bashrc</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">alias</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">bind</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># PS1 is the environment variable that contains the shell prompt. </span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>https://tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="c1"># &#39;\e[0;31m&#39; is the terminal escape sequence to change color to red. # &#39;\u&#39; is the user name</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># &#39;\e[m&#39; means &quot;return to the default text color&quot;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;\e[0;32m\h \W\:~ \e[m &quot;</span>  <span class="c1">### red hostname cwd:~ </span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../docker/" class="btn btn-neutral float-right" title="Docker">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../docker/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
